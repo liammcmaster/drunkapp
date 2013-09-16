@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context=".BaseActivity" >
+
+    <TextView
+        android:id="@+id/welcome_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:keepScreenOn="true"
+        android:text="@string/base_page_welcome"
+        android:textColor="#33b5e5"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_select_applications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/welcome_content"
+        android:layout_margin="10sp"
+        android:text="@string/select_applications"
+        android:onClick="onSettingsClick" />
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/button_select_applications"
+        android:layout_margin="10sp"
+        android:text="@string/start"
+        android:onClick="onStartClick" />
+
+</RelativeLayout>
